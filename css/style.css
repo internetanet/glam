@@ -122,6 +122,11 @@ header.default {
     margin-top: 50px;
     color:#fff;
 }
+@media screen and (max-width: 991px) {
+    .logo {
+        padding: 0 15px;
+    }
+}
 .logo img {
     margin-bottom: 50px;
 }
