@@ -18,6 +18,11 @@ body {
 .btn {
     border-radius: 0.15rem;
 }
+@media screen and (max-width: 991px) {
+    .container {
+        padding: 0;
+    }
+}
 /* header start */
 header {
     font-family: 'Oranienbaum', serif;
