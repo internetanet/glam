@@ -3,7 +3,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 20px;
 }
 body {
-    background: url(./images/bg-main.png) top #000 no-repeat;
+    background: url(../images/bg-main.png) top #000 no-repeat;
     font-family: 'roboto';
 }
 .white-background {
@@ -41,6 +41,30 @@ header.default {
 .header-toggle-height {
     height: 235px;
 }
+.header-toggle-height .navbar-collapse {
+    display: block;
+}
+.header-toggle-height button {
+    margin-top: 32px;
+}
+.header button {
+    margin-top: 32px;
+}
+.collapse:not(.show) {
+    display: block !important;
+}
+@media screen and (max-width: 991px) {
+    .header button~.navbar-collapse {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.55s opacity, 0.55s visibility;
+    }
+    .header-toggle-height button~.navbar-collapse {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
