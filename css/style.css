@@ -35,8 +35,8 @@ header.fixed {
     background: #000;
     z-index: 5;
     width: 100%;
-    padding-right: 65px;
-    padding-left: 65px;
+    padding-right: 85px;
+    padding-left: 190px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -125,6 +125,10 @@ header.default {
 @media screen and (max-width: 991px) {
     .logo {
         padding: 0 15px;
+    }
+    .header.fixed {
+        padding-right: 15px;
+        padding-left: 10px;
     }
 }
 .logo img {
